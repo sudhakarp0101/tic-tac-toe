@@ -1,0 +1,259 @@
+.App {
+  text-align: center;
+}
+
+body {
+  font: 14px "Century Gothic", Futura, sans-serif;
+  margin: 20px;
+  background-color: #0b233f;
+  color: white;
+}
+.window{
+  display: block;
+}
+ol, ul {
+  padding-left: 30px;
+}
+
+.board-row:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.status {
+  margin-bottom: 10px;
+}
+.outer-square {
+  display: flex;
+  justify-content:  center;
+  align-items: center;
+  background: #0b233f;
+  border: 2px dashed #999;
+  border-radius: 25px;
+  float: left;
+  font-size: 90px;
+  line-height: 50px;
+  margin-top: auto;
+  text-align: center;
+  height: 380px;
+  width: 380px;
+}
+.inner-square{
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+.square {
+  background: #25476e;
+  color: white;
+  font-size: 90px;
+  font-weight: bold;
+  line-height: 100px;
+  height: 120px;
+  margin-right: -1px;
+  margin-top: -1px;
+  padding: 0;
+  text-align: center;
+  width: 120px;
+}
+
+.player-info{
+  height: 380px;
+  width: 380px;
+  margin: auto;
+}
+.player-color{
+  color: orange;
+  margin: auto;
+  padding: 3px;
+}
+.player-name{
+  font-size: 20px;
+  margin: auto;
+  padding: 5px;
+}
+.player-symbol{
+  font-size: 50px;
+  font-weight: bold;
+  margin: auto;
+}
+.player-status{
+  display: flex;
+  height: 120px;
+  justify-content: center;
+  align-items: flex-end;
+  margin: auto;
+  padding: 10px;
+  font-size: 25px;
+  color: orange;
+}
+.player-status.winner{
+  border: 2px solid orange;
+}
+.square-player {
+  background: #25476e;
+  color: white;
+  border-radius: 25px;
+  border: 2px solid #999;
+  height: 120px;
+  margin: auto;
+  padding: 0;
+  text-align: center;
+  width: 120px;
+}
+
+.square:focus {
+  outline: none;
+}
+
+.kbd-navigation .square:focus {
+  background: #ddd;
+}
+
+.game {
+ position: relative;
+}
+
+.game-info {
+  margin-left: 20px;
+  justify-content:  space-evenly;
+
+}
+.title{
+  position: relative;
+  top:10px;
+  left: 10px;
+  font-size: 15px;
+  font-weight: bold;
+  display: grid;
+  grid-template-columns: 20px 20px 20px;
+  margin: 10px;
+  padding: 10px;
+  height: 50px;
+}
+.play-area{
+  position: relative;
+ 
+  border: 2px solid #999;
+}
+.board{
+   display: flex;
+   justify-content:  center;
+   align-items: center;
+   margin: 30px;
+   padding:30px;
+}
+.winnings{
+  margin: 5px;
+}
+.dot {
+  height: 12px;
+  width: 12px;
+  margin: 3px;
+  background: #25476e;
+  border-radius: 50%;
+  display: inline-block;
+}
+.white-dot {
+  height: 12px;
+  width: 12px;
+  margin: 3px;
+  background: white;
+  border-radius: 50%;
+  display: inline-block;
+}
+.player-outer-square {
+  display: flex;
+  justify-content:  center;
+  align-items: center;
+  background: #0b233f;
+  border: 2px dashed #999;
+  border-radius: 25px;
+  float: left;
+  margin-top: auto;
+  height: 380px;
+  width: 380px;
+}
+.user-data {
+  background-color: #25476e;
+  border-radius: 25px;
+  color: white;
+  height: 360px;
+  width: 360px;
+}
+.user-title{
+  font-size: 22px;
+  margin-top: 20px;
+  padding: 5px;
+  font-weight: bold;
+}
+.user-text-color{
+  color: orange;
+}
+.player-placing{
+  text-align: left;
+  margin-top: 20px;
+  margin-left: 50px;
+  margin-bottom: -5px;
+}
+input {
+  width: 70%;
+  line-height: 30px;
+  margin-top: -5px;
+  margin-bottom: 20px;
+  background-color: #25476e;
+  border: 2px solid white;
+  color: white;
+}
+
+.user-color{
+    background: #f12711;
+    background: -webkit-linear-gradient(to right, #f12711, #f5af19);  
+    background: linear-gradient(to right, #f12711, #f5af19); 
+    width: 73%;
+    line-height: 30px;
+    margin-top: 20px;
+    padding: 5px;
+}
+.player-data {
+  background-color: #25476e;
+  border-radius: 25px;
+  color: white;
+  height: 360px;
+  width: 360px;
+}
+
+.player-status-large{
+  display: flex;
+  height: 100px;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  font-size: 35px;
+  width: 360px;
+  color: white;
+}
+.square-player-large {
+  display: block;
+  width: 180px;
+  height: 180px;
+  align-items: center;
+  background: #25476e;
+  color: white;
+  border-radius: 25px;
+  border: 2px solid orange;
+  margin: auto;
+  text-align: center;
+  padding:10px;
+}
+.player-name-large{
+  font-size: 30px;
+  font-weight: bold;
+  margin-top:  15px;
+  margin-bottom: -5px;
+}
+.player-symbol-large{
+  font-size: 100px;
+  font-weight: bold;
+  margin: auto;
+}
